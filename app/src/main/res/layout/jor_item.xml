@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="#D6D7D7"
+   >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff"
+        />
+    <ImageButton
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove"
+        android:layout_weight="3"
+        android:src="@drawable/delete"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text=""
+            android:textSize="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_weight="3" />
+
+        <TextView
+            android:text=""
+            android:textSize="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/designname"
+            android:layout_weight="3" />
+
+        <TextView
+            android:text=""
+            android:textSize="25dp"
+            android:ems="6"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:id="@+id/moo"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/remove"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#ffffff"
+        />
+</RelativeLayout>
